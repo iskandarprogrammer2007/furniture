@@ -1,0 +1,76 @@
+.dark {
+  $primaryColor: white;
+  $secondaryColor: black;
+  $darkModeColor: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  bottom: 20px;
+  right: 20px;
+  background: $backgroundColor;
+  border-radius: 50%;
+  color: $secondaryColor;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.show__back-top {
+  display: flex;
+}
+
+.btn {
+  width: 200px;
+  height: 78px;
+  background: $backgroundColor;
+  color: $secondaryColor;
+  border: 1px solid $backgroundColor;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: $secondaryColor;
+  color: $backgroundColor;
+}
+
